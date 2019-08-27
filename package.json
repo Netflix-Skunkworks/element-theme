@@ -1,6 +1,6 @@
 {
   "name": "@netflix/element-theme",
-  "version": "2.11.1",
+  "version": "2.11.1-alpha",
   "description": "Netflix-specific customizations to the Element UI design system styles",
   "main": "lib/index.css",
   "files": [
