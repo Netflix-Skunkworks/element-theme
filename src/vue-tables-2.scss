@@ -1,0 +1,151 @@
+/*******************************
+       vue-tables-2 Styles
+*******************************/
+.VueTables {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--neutral-100);
+  position: relative;
+
+  .table-responsive {
+    flex: 1;
+    overflow: auto;
+
+    table {
+      width: 100%;
+    }
+  }
+
+  // Headers
+  th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--neutral-050);
+  }
+
+  // Sorting
+  .VueTables__sortable {
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .VueTables__sort-icon {
+    color: var(--neutral-200);
+    font-size: var(--text-2);
+    margin-left: var(--space-2);
+  }
+
+  // Filtering
+  .VueTables__filters-row {
+    th {
+      top: 35px;
+    }
+
+    input {
+      font-size: var(--text-base);
+      padding: var(--space-1) var(--space-2);
+      width: 90%;
+      border: 1px solid var(--neutral-100);
+      border-radius: 4px;
+    }
+  }
+
+  // Pagination
+  .VuePagination nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid var(--neutral-100);
+  }
+  .VuePagination__pagination {
+    list-style: none;
+    margin: var(--space-2);
+    padding: 0;
+  }
+  .VuePagination__pagination .page-link {
+    display: inline-block;
+    min-width: var(--text-7);
+    text-align: center;
+  }
+  .VuePagination__pagination .disabled .page-link,
+  .VuePagination__pagination .active .page-link {
+    color: var(--neutral-900);
+    cursor: default;
+    font-weight: var(--text-bold);
+  }
+  .VuePagination__pagination-item-prev-chunk.disabled,
+  .VuePagination__pagination-item-next-chunk.disabled {
+    display: none;
+  }
+  .VuePagination__pagination-item {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .VuePagination__count {
+    margin: var(--space-2);
+  }
+  .VueTables__limit {
+    display: none;
+  }
+
+  // Export to CSV button
+  .export-button {
+    position: absolute;
+    bottom: 2px;
+    right: var(--space-2);
+  }
+
+  // Column selector
+  .VueTables__columns-dropdown-wrapper {
+    position: absolute;
+    bottom: 2px;
+    right: var(--space-2);
+
+    .dropdown-toggle {
+      -webkit-appearance: none;
+      outline: none;
+      line-height: 1;
+      cursor: pointer;
+      border: $--border-base;
+      @include button-variant(
+        $--color-black,
+        $--color-white,
+        $--button-default-border-color
+      );
+      @include button-size(
+        $--button-mini-padding-vertical,
+        $--button-mini-padding-horizontal,
+        $--button-mini-font-size,
+        $--button-mini-border-radius
+      );
+
+      &:hover,
+      &:focus {
+        color: $--color-primary;
+        border-color: $--color-primary-light-7;
+        background-color: $--color-primary-light-9;
+        -webkit-text-stroke: 0.33px rgba(0, 0, 0, 0.33);
+      }
+    }
+    .dropdown-menu {
+      position: absolute;
+      bottom: var(--space-5);
+      right: 0;
+      background-color: var(--neutral-050);
+      border: 1px solid var(--neutral-100);
+      border-radius: 4px;
+      box-shadow: $--box-shadow-light;
+      padding: var(--space-2) var(--space-3);
+      padding-bottom: var(--space-1);
+      width: 280px;
+      list-style-type: none;
+      max-height: 360px;
+      overflow: auto;
+
+      input {
+        margin: 0 var(--space-2) var(--space-2) 0;
+      }
+    }
+  }
+}

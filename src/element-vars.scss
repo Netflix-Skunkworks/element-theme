@@ -1,0 +1,73 @@
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+$--color-white: hsl(0, 0%, 100%);
+$--color-black: hsl(210, 24%, 16%); // var(--neutral-900)
+
+$--color-primary: hsl(189, 80%, 39%); // var(--primary-500)
+
+$--color-success: hsl(83, 64%, 42%); // var(--green-500)
+$--color-success-light: hsl(83, 68%, 74%); // var(--green-200)
+$--color-success-lighter: hsl(83, 88%, 94%); // var(--green-050)
+
+$--color-warning: hsl(42, 87%, 55%); // --var(yellow-500)
+$--color-warning-light: hsl(48, 95%, 76%); // --var(yellow-200)
+$--color-warning-lighter: hsl(49, 100%, 96%); // --var(yellow-050)
+
+$--color-danger: hsl(360, 67%, 44%); // --var(red-500)
+$--color-danger-light: hsl(360, 77%, 78%); // --var(red-200)
+$--color-danger-lighter: hsl(360, 100%, 97%); // --var(red-050)
+
+$--color-info: hsl(200, 54%, 49%); // --var(blue-500)
+$--color-info-light: hsl(200, 71%, 80%); // --var(blue-200)
+$--color-info-lighter: hsl(201, 100%, 96%); // --var(blue-050)
+
+$--color-text-primary: hsl(210, 24%, 16%); // var(--neutral-900)
+$--color-text-regular: hsl(211, 12%, 43%); // var(--neutral-500)
+$--color-text-secondary: hsl(211, 13%, 65%); // var(--neutral-300)
+$--color-text-placeholder: hsl(211, 10%, 53%); // var(--neutral-400)
+
+/* Alert
+-------------------------- */
+$--alert-success-color: hsl(84, 77%, 86%); // var(--green-100)
+$--alert-info-color: hsl(200, 88%, 90%); // --var(blue-100)
+$--alert-warning-color: hsl(48, 100%, 88%); // --var(yellow-100)
+$--alert-danger-color: hsl(360, 82%, 89%); // --var(red-100)
+$--alert-description-font-size: 13px;
+$--alert-close-font-size: 13px;
+
+/* Badge
+-------------------------- */
+$--badge-font-size: 12px;
+
+/* Button
+-------------------------- */
+$--button-small-font-size: 13px;
+$--button-mini-font-size: 13px;
+
+/* Card
+--------------------------*/
+$--card-padding: var(--space-3);
+
+/* Message
+-------------------------- */
+$--message-success-color: hsl(81, 78%, 21%); // var(--green-800)
+$--message-info-color: hsl(200, 72%, 31%); // --var(blue-800)
+$--message-warning-color: hsl(22, 82%, 39%); // --var(yellow-800)
+$--message-danger-color: hsl(360, 85%, 25%); // --var(red-800)
+
+/* Table
+-------------------------- */
+$--table-border-color: var(--neutral-100);
+$--table-border: 1px solid var(--neutral-100);
+$--table-header-color: var(--neutral-900);
+$--table-header-background: var(--neutral-050);
+$--table-footer-background: var(--neutral-050);
+$--table-row-hover-background: var(--neutral-100);
+
+/* Tag
+-------------------------- */
+$--tag-font-size: 13px;
+
+/* Tooltip
+-------------------------- */
+$--tooltip-font-size: 13px;

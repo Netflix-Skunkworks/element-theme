@@ -1,0 +1,193 @@
+/*******************************
+        Top Nav Overrides
+*******************************/
+.el-menu--horizontal {
+  height: 40px;
+  -webkit-text-stroke: 0.33px rgba(255, 255, 255, 0.33);
+}
+.el-menu--horizontal .el-menu-item,
+.el-menu--horizontal .el-submenu .el-submenu__title {
+  height: 39px;
+  line-height: 40px;
+  font-size: var(--text-2);
+}
+.el-menu--horizontal .el-submenu > .el-menu {
+  top: 39px;
+}
+.el-menu--horizontal a {
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+}
+.el-menu--horizontal h1 {
+  margin: 0;
+  font-size: var(--text-4);
+}
+.el-menu-item svg {
+  margin-right: var(--space-2);
+}
+
+/*******************************
+        Tabs Overrides
+*******************************/
+.el-tabs--border-card {
+  border-bottom-width: var(--space-0);
+  box-shadow: none;
+}
+
+.el-tabs__item svg {
+  margin-top: var(--space-0);
+  margin-bottom: var(--space-0);
+  margin-left: calc(-1 * var(--space-2));
+  margin-right: var(--space-2);
+}
+
+.el-tabs__content {
+  padding: var(--space-0) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-tabs .el-tabs__header {
+  margin-top: calc(-1 * var(--space-1));
+  margin-bottom: var(--space-0);
+}
+
+/*******************************
+        Card Overrides
+*******************************/
+.el-card__header {
+  background-color: var(--neutral-050);
+  padding: 0.75em 1em;
+}
+
+.el-card__header h3 {
+  margin: 0;
+}
+
+/*******************************
+        Label Overrides
+*******************************/
+.el-form--label-top .el-form-item__label {
+  padding: var(--space-0);
+}
+
+.el-form-item__content .help-text {
+  color: #6a6a6a;
+  font-size: 12px;
+  line-height: 2em;
+  margin-bottom: -0.5em;
+}
+
+/*******************************
+        Tags Overrides
+*******************************/
+.el-select__tags .el-tag {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: var(--neutral-500);
+  padding: 0px 7px;
+  height: 24px;
+}
+.el-select__tags .el-tag .el-icon-close {
+  background-color: var(--neutral-200);
+  color: var(--neutral-400);
+  margin-right: 3px;
+}
+
+/*******************************
+        Button Overrides
+*******************************/
+.el-button.micro {
+  padding: 3px 7px;
+}
+
+.el-button svg {
+  margin: 0 0.5em 0 -0.25em;
+}
+
+/*******************************
+        Badge Overrides
+*******************************/
+.el-badge__content {
+  height: 20px;
+  line-height: 17px;
+  font-weight: var(--text-bold);
+  -webkit-text-stroke: 0.33px rgba(255, 255, 255, 0.33);
+}
+
+/*******************************
+        Dropdown Overrides
+*******************************/
+.el-dropdown-menu__item a {
+  display: block;
+}
+
+.el-dropdown-menu--mini .el-dropdown-menu__item,
+.el-dropdown-menu--small .el-dropdown-menu__item,
+.el-dropdown-menu--medium .el-dropdown-menu__item {
+  line-height: 40px;
+}
+
+/*******************************
+      Cascader Overrides
+*******************************/
+// Overrides keyword highlight padding bug introduced in
+// https://github.com/ElemeFE/element/pull/13596/files
+.el-cascader-menu__item .el-cascader-menu__item__keyword {
+  padding-right: 0;
+}
+
+/*******************************
+        Alert Overrides
+*******************************/
+.el-alert ul {
+  margin: 0;
+  padding: 0 0.5em;
+}
+.el-alert--success.is-light,
+.el-alert--success.is-light .el-alert__description {
+  color: var(--green-800);
+}
+.el-alert--info.is-light,
+.el-alert--info.is-light .el-alert__description {
+  color: var(--blue-800);
+}
+.el-alert--warning.is-light,
+.el-alert--warning.is-light .el-alert__description {
+  color: var(--yellow-800);
+}
+.el-alert--error.is-light,
+.el-alert--error.is-light .el-alert__description {
+  color: var(--red-800);
+}
+
+/*******************************
+        Message Overrides
+*******************************/
+.el-message--success {
+  background-color: var(--green-100);
+}
+.el-message--info {
+  background-color: var(--blue-100);
+}
+.el-message--warning {
+  background-color: var(--yellow-100);
+}
+.el-message--error {
+  background-color: var(--red-100);
+}
+.el-message.is-closable .el-message__content {
+  padding-right: var(--space-4);
+}
+
+/*******************************
+        Table Overrides
+*******************************/
+.el-table thead.is-group th {
+  background-color: var(--neutral-050);
+}
+
+.el-table.scroll {
+  overflow: auto;
+}

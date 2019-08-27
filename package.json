@@ -1,0 +1,21 @@
+{
+  "name": "@netflix/element-theme",
+  "version": "2.11.1",
+  "description": "Netflix-specific customizations to the Element UI design system styles",
+  "main": "lib/index.css",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "element-ui": "2.11.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
