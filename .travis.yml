@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '10'
+deploy:
+  provider: npm
+  email: npm@netflix.com
+  on:
+    tags: true
+  api_key:
+    secure: AFwRDZ2VH4ErTtYY4hz6/uMSFQYTRcmoq4bYlmxBzehnkNAyqIc/6qCOZpYQ5DKrH6eykyb1N8JzG40s994Y9vzGzNqWNurIKkfgzsHgg6Z5oGM1wqNNPNF2hBlz1vn5NT+Gj5N5kZAMhY89TNKY4KnpZKvIxAE69No3hAJOsg14WQZWFJPhpvaoXqhAOXcFfxzsGTZYgpWC0SdcdC0XyF2FiWqP2P/DqJSIVsozDhXqZLmOuhFKVLav1P4B5YW+/I6CD8UjOO2n75qY0OsdJVYfkHMinKF+oYQNfZ1jGtS1ekyy//hpG5eSG0gIR+eIqgBPsxUgPiqjvu3It7+hJhx21nZ9hYOIASMzBigObXWS+Xwxfu/1Wq85aRbH+Gb8EbryrZlSbKlWe4dpRlXmwox+p1OytMrBATUY0vZne/v/x96F6xcB4+QCN65JhBQU4P0f6QMxDIrsxYGf1bAm5J52vnz4fkPXOBkUSdcn780iytrPwszQk+rbYgVF1vZJ5FvbY442bwMKm8Oqb9wOVuopXyLq0NuwahRwa99XyWeaunvx7t4/kydBTzdsSh5Tkk3BEvGzkrpU97gc7g1xLiqPGOYGAU11idvcYziMFfaOAqAX7BNywdjETY9xOSPUxJfWUakQF2tBwEtHS/2YP1FraUJudp53DT/EOA5D8Rg=
