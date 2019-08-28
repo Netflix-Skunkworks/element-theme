@@ -5,6 +5,7 @@ script: yarn build
 deploy:
   provider: npm
   email: npm@netflix.com
+  skip_cleanup: true
   on:
     tags: true
   api_key:
